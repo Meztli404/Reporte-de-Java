@@ -6,6 +6,35 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="myDiv" class="myClass">Hello Word!</div>
+    <button id="changeText">Change Text</button>
     
+    <script>
+        //Seleccionar un elemento por ID
+        const myDiv = document.getElementById('myDiv');
+        document.write("myDiv");
+        document.write(myDiv);
+
+        //Seleccionar elementos por clase
+        const elementsByClass = document.getElementsByClassName('myClass');
+        document.write("elementsByClass");
+        document.write(elementsByClass);
+
+        //Seleccioanr elementos por etiqueta
+        const elementsByTag = document.getElementsByTagName('div');
+        document.write("elementsByTag");
+        document.write(elementsByTag);
+
+        //Seleccionar un elemento con querySelector 
+        const queryElement = document.querySelector('myDiv');
+        document.write("queryElement");
+        document.write(queryElement);
+
+        //Seleccionar todos los elementos con querySelectorAll
+        const queryAllElements = document.querySelectorAll('div')
+        ocument.write("queryAllElements");
+        document.write(queryAllElements);
+
+    </script>
 </body>
 </html>
