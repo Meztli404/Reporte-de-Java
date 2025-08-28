@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Ejercicios de Dom 28/08/2025</h1>
-    <div id="myDiv" class="myClass">Hello Word!</div>
-    <button id="changeText">Change Text</button>
-    
-    <script>
-        //Seleccionar un elemento por ID
-        const myDiv = document.getElementById('myDiv');
-        document.write("myDiv");
-        document.writeln("<br>")
-        document.write(myDiv);
-        document.writeln("<br>")
-        document.writeln("<br>")
-        //Seleccionar elementos por clase
-        const elementsByClass = document.getElementsByClassName('myClass');
-        document.write("elementsByClass");
-        document.writeln("<br>")
-        document.write(elementsByClass);
-        document.writeln("<br>")
-        document.writeln("<br>")
-        //Seleccionar elementos por etiqueta
-        const elementsByTag = document.getElementsByTagName('div');
-        document.write("elementsByTag");
-        document.writeln("<br>")
-        document.write(elementsByTag);
-        document.writeln("<br>")
-        document.writeln("<br>")
-        //Seleccionar un elemento con querySelector 
-        const queryElement = document.querySelector('myDiv');
-        document.write("queryElement");
-        document.writeln("<br>")
-        document.write(queryElement);
-        document.writeln("<br>")
-        document.writeln("<br>")
-        //Seleccionar todos los elementos con querySelectorAll
-        const queryAllElements = document.querySelectorAll('div')
-        ocument.write("queryAllElements");
-        document.writeln("<br>")
-        document.write(queryAllElements);
 
-    </script>
+<body>
+    <div>
+        <h1>Ejercicios de 1 </h1>
+        <h2>28/08/2025</h2>
+        <div id="myDiv" class="myClass">Hello Word!</div>
+        <button id="changeText">Change Text</button>
+
+        <script>
+            //Seleccionar un elemento por ID
+            const myDiv = document.getElementById('myDiv');
+            document.write("myDiv");
+            document.writeln("<br>")
+            document.write(myDiv);
+            document.writeln("<br>")
+            document.writeln("<br>")
+            //Seleccionar elementos por clase
+            const elementsByClass = document.getElementsByClassName('myClass');
+            document.write("elementsByClass");
+            document.writeln("<br>")
+            document.write(elementsByClass);
+            document.writeln("<br>")
+            document.writeln("<br>")
+            //Seleccionar elementos por etiqueta
+            const elementsByTag = document.getElementsByTagName('div');
+            document.write("elementsByTag");
+            document.writeln("<br>")
+            document.write(elementsByTag);
+            document.writeln("<br>")
+            document.writeln("<br>")
+            //Seleccionar un elemento con querySelector 
+            const queryElement = document.querySelector('myDiv');
+            document.write("queryElement");
+            document.writeln("<br>")
+            document.write(queryElement);
+            document.writeln("<br>")
+            document.writeln("<br>")
+            //Seleccionar todos los elementos con querySelectorAll
+            const queryAllElements = document.querySelectorAll('div')
+            ocument.write("queryAllElements");
+            document.writeln("<br>")
+            document.write(queryAllElements);
+
+        </script>
+    </div>
+
+    <div>
+        <h1>Ejercicios de 2 </h1>
+        <div id="myDiv">Hello World</div>
+        <button id="changeText1">Change Text</button>
+        <button id="changeStyle1">Change Style</button>
+        <script>
+            const myDiv1 =document.getElementById('myDiv');
+
+            //Cambiar el texto del elemento
+            document.getElementById('changeText').addEventListener('click',()=>{
+                myDiv.textContent='Text Changed!';
+            });
+
+            //Cambiar el estilo del elemento 
+            document.getElementById('changeStyle').addEventListener('click',() => {
+                myDiv.style.color='red';
+                myDiv.style.fontSize='24px';
+            });
+
+        </script>
+    </div>
+
 </body>
+
 </html>
