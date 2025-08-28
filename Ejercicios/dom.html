@@ -45,7 +45,7 @@
             document.writeln("<br>")
             //Seleccionar todos los elementos con querySelectorAll
             const queryAllElements = document.querySelectorAll('div')
-            ocument.write("queryAllElements");
+            document.write("queryAllElements");
             document.writeln("<br>")
             document.write(queryAllElements);
 
@@ -61,12 +61,12 @@
             const myDiv1 =document.getElementById('myDiv');
 
             //Cambiar el texto del elemento
-            document.getElementById('changeText').addEventListener('click',()=>{
+            document.getElementById('changeText1').addEventListener('click',()=>{
                 myDiv.textContent='Text Changed!';
             });
 
             //Cambiar el estilo del elemento 
-            document.getElementById('changeStyle').addEventListener('click',() => {
+            document.getElementById('changeStyle1').addEventListener('click',() => {
                 myDiv.style.color='red';
                 myDiv.style.fontSize='24px';
             });
