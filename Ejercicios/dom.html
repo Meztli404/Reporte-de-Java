@@ -5,16 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 
 <body>
-    <div>
-        <h1>Ejercicios de 1 </h1>
-        <h2>28/08/2025</h2>
-        <div id="myDiv" class="myClass">Hello Word!</div>
-        <button id="changeText">Change Text</button>
+    <div class="w3-container w3-red">
+        <h1 class="w3-center">Ejercicios de 1 </h1>
+        <h2 class="w3-center">28/08/2025</h2>
+        <div class="w3-row">
+            <div class="w3-half w3-blue w3-padding">
 
-        <script>
+                <code>
+            const myDiv = document.getElementById('myDiv');
+            document.write("myDiv");
+            document.writeln("br")
+            document.write(myDiv);
+            document.writeln("br")
+            document.writeln("br")
+            <br>
+            //Seleccionar elementos por clase
+            const elementsByClass = document.getElementsByClassName('myClass');
+            document.write("elementsByClass");
+            document.writeln("br")
+            document.write(elementsByClass);
+            document.writeln("br")
+            document.writeln("br")
+            <br>
+            //Seleccionar elementos por etiqueta
+            const elementsByTag = document.getElementsByTagName('div');
+            document.write("elementsByTag");
+            document.writeln("br")
+            document.write(elementsByTag);
+            document.writeln("br")
+            document.writeln("br")
+            <br>
+            //Seleccionar un elemento con querySelector 
+            const queryElement = document.querySelector('myDiv');
+            document.write("queryElement");
+            document.writeln("br")
+            document.write(queryElement);
+            document.writeln("br")
+            document.writeln("br")
+            <br>
+            //Seleccionar todos los elementos con querySelectorAll
+            const queryAllElements = document.querySelectorAll('div')
+            document.write("queryAllElements");
+            document.writeln("br")
+            document.write(queryAllElements);
+                    </code>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <div id="myDiv111" >Hello Word!</div>
+                <button id="changeText">Change Text</button>
+                <br><br>
+
+                <script>
             //Seleccionar un elemento por ID
             const myDiv = document.getElementById('myDiv');
             document.write("myDiv");
@@ -50,29 +95,77 @@
             document.write(queryAllElements);
 
         </script>
-    </div>
 
-    <div>
-        <h1>Ejercicios de 2 </h1>
-        <div id="myDiv">Hello World</div>
-        <button id="changeText1">Change Text</button>
-        <button id="changeStyle1">Change Style</button>
+            </div>
+        </div>
+
+
+        
+    </div>
+    <hr>
+    <hr>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h1 class="w3-center">Ejercicios 2</h1>
+            <div id="myDiv1" class="myClass">Hello World</div>
+            <div class="w3-half w3-padding">
+                <h2 class="w3-center">Codigo</h2>
+                <code>
+                    const myDiv1 = document.getElementById('myDiv');
+
+                    //Cambiar el texto del elemento
+                    document.getElementById('changeText1').addEventListener('click', () => {
+                        myDiv.textContent = 'Text Changed!';
+                    });
+
+                    //Cambiar el estilo del elemento 
+                    document.getElementById('changeStyle1').addEventListener('click', () => {
+                        myDiv.style.color = 'red';
+                        myDiv.style.fontSize = '24px';
+                    });
+                </code>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <button id="changeText1">Change Text</button>
+                <button id="changeStyle1">Change Style</button>
+            </div>
+        </div>
+
         <script>
-            const myDiv1 =document.getElementById('myDiv');
+            const myDiv1 = document.getElementById('myDiv1');
 
             //Cambiar el texto del elemento
-            document.getElementById('changeText1').addEventListener('click',()=>{
-                myDiv.textContent='Text Changed!';
+            document.getElementById('changeText1').addEventListener('click', () => {
+                myDiv1.textContent = 'Text Changed!';
             });
 
             //Cambiar el estilo del elemento 
-            document.getElementById('changeStyle1').addEventListener('click',() => {
-                myDiv.style.color='red';
-                myDiv.style.fontSize='24px';
+            document.getElementById('changeStyle1').addEventListener('click', () => {
+                myDiv1.style.color = 'red';
+                myDiv1.style.fontSize = '24px';
             });
 
         </script>
     </div>
+
+
+    <!-- Plantilla -->
+
+    <!-- <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h1 class="w3-center">Titulo</h1>
+
+            <div class="w3-half w3-padding">
+
+            </div>
+            <div class="w3-half w3-padding w3-border">
+
+            </div>
+        </div>
+    </div> -->
+
+
 
 </body>
 
