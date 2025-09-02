@@ -1,0 +1,23 @@
+/* Estilo de DOM */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+.lista {
+    background-color: lightblue;
+}
+#tituloejercicio {
+    font-size: 24px;
+    font-weight: bold;
+    background-color:blueviolet ;
+}   
+#t2{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mouse:hover {
+    color: red;
+    cursor: pointer;
+}

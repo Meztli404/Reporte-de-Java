@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+
+<body>
+    <h1>Funciones en JavaScript</h1>
+    <hr>
+    <hr>
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Sumas</h2>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function sumar(a, b) {
+                            return a + b;
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const sumarFlecha = (a, b) => a + b;
+                    </pre>
+                    <h3>Pruebas</h3>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h3>Pruebas</h3>
+                <script>
+                    document.write("Suma Tradicional: " + sumar(5, 3) + "<br>");
+                    document.write("Suma Flecha: " + sumarFlecha(5, 3) + "<br>");
+                    function sumar(a, b) {
+                        return a + b;
+                    }
+                    const sumarFlecha = (a, b) => a + b;
+                </script>
+            </div>
+        </div>
+    </div>
+    <hr><hr>
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Division de dos numeros</h2>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function dividir(a, b) {
+                            if (b === 0) {
+                                return "Error: Division por cero";
+                            }
+                            return a / b;
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const dividirFlecha = (a, b) => {
+                            if (b === 0) {
+                                return "Error: Division por cero";
+                            }
+                            return a / b;
+                        };
+                    </pre>
+                    
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h3>Pruebas</h3>
+                <script>
+                    document.write("Division Tradicional (10 / 2): " + dividir(10, 2) + "<br>");
+                    document.write("Division Tradicional (10 / 0): " + dividir(10, 0) + "<br>");
+                    document.write("Division Flecha (10 / 2): " + dividirFlecha(10, 2) + "<br>");
+                    document.write("Division Flecha (10 / 0): " + dividirFlecha(10, 0) + "<br>");
+                    function dividir(a, b) {
+                        if (b === 0) {
+                            return "Error: Division por cero";
+                        }
+                        return a / b;
+                    }
+                    const dividirFlecha = (a, b) => {
+                        if (b === 0) {
+                            return "Error: Division por cero";
+                        }
+                        return a / b;
+                    };
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio 3 Potencia de un numero</h2>
+
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function potencia(base, exponente) {
+                            return Math.pow(base, exponente);
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
+                    </pre>
+                    <h3>Pruebas</h3>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h3>Pruebas</h3>
+                <script>
+                    document.write("Potencia Tradicional (2^3): " + potencia(2, 3) + "<br>");
+                    document.write("Potencia Flecha (2^3): " + potenciaFlecha(2, 3) + "<br>");
+                    function potencia(base, exponente) {
+                        return Math.pow(base, exponente);
+                    }
+                    const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio 4 Mayor de 2 Numeros</h2>
+
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function mayor(a, b) {
+                            return (a > b) ? a : b;
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const mayorFlecha = (a, b) => (a > b) ? a : b;
+                    </pre>
+                    <h3>Pruebas</h3>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h3>Pruebas</h3>
+                <script>
+                    document.write("Mayor Tradicional (5, 10): " + mayor(5, 10) + "<br>");
+                    document.write("Mayor Flecha (5, 10): " + mayorFlecha(5, 10) + "<br>");
+                    function mayor(a, b) {
+                        return (a > b) ? a : b;
+                    }
+                    const mayorFlecha = (a, b) => (a > b) ? a : b;
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio Personal</h2>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function cambiarColor(elemento, color) {
+                            elemento.style.backgroundColor = color;
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const cambiarColorFlecha = (elemento, color) => {
+                            elemento.style.backgroundColor = color;
+                        };
+                    </pre>
+                    <h3>Pruebas</h3>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h2>Prueba</h2>
+                <script>
+                    document.write("Prueba de cambio de color al pasar el mouse sobre el area azul claro.<br>");
+                    h2 = document.querySelector("h2");
+                    cambiarColor(h2,'blue');
+                    function cambiarColor(elemento, color) {
+                        elemento.style.backgroundColor = color;
+                    }
+                    const cambiarColorFlecha = (elemento, color) => {
+                        elemento.style.backgroundColor = color;
+                    };
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plantilla -->
+
+    <!-- <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Titulo</h2>
+
+            <div class="w3-half w3-padding">
+
+            </div>
+            <div class="w3-half w3-padding w3-border">
+
+            </div>
+        </div>
+    </div> -->
+
+
+
+</body>
+
+</html>
