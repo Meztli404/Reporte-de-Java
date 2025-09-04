@@ -17,7 +17,7 @@
         <div class="w3-row">
             <h2 class="w3-center">Sumas</h2>
             <div class="w3-half w3-padding">
-                <div class="w3-code notranslate">
+                <div class="w3-code notranslate w3-black">
                     <h3>Funcion Tradicional</h3>
                     <pre>
                         function sumar(a, b) {
@@ -28,29 +28,29 @@
                     <pre>
                         const sumarFlecha = (a, b) => a + b;
                     </pre>
-                    <h3>Pruebas</h3>
-
                 </div>
             </div>
             <div class="w3-half w3-padding w3-border">
                 <h3>Pruebas</h3>
                 <script>
+                    const sumarFlecha = (a, b) => a + b;
                     document.write("Suma Tradicional: " + sumar(5, 3) + "<br>");
                     document.write("Suma Flecha: " + sumarFlecha(5, 3) + "<br>");
                     function sumar(a, b) {
                         return a + b;
                     }
-                    const sumarFlecha = (a, b) => a + b;
+
                 </script>
             </div>
         </div>
     </div>
-    <hr><hr>
+    <hr>
+    <hr>
     <div class="w3-container w3-red">
         <div class="w3-row">
             <h2 class="w3-center">Division de dos numeros</h2>
             <div class="w3-half w3-padding">
-                <div class="w3-code notranslate">
+                <div class="w3-code notranslate w3-black">
                     <h3>Funcion Tradicional</h3>
                     <pre>
                         function dividir(a, b) {
@@ -69,12 +69,18 @@
                             return a / b;
                         };
                     </pre>
-                    
+
                 </div>
             </div>
             <div class="w3-half w3-padding w3-border">
                 <h3>Pruebas</h3>
                 <script>
+                    const dividirFlecha = (a, b) => {
+                        if (b === 0) {
+                            return "Error: Division por cero";
+                        }
+                        return a / b;
+                    };
                     document.write("Division Tradicional (10 / 2): " + dividir(10, 2) + "<br>");
                     document.write("Division Tradicional (10 / 0): " + dividir(10, 0) + "<br>");
                     document.write("Division Flecha (10 / 2): " + dividirFlecha(10, 2) + "<br>");
@@ -85,12 +91,7 @@
                         }
                         return a / b;
                     }
-                    const dividirFlecha = (a, b) => {
-                        if (b === 0) {
-                            return "Error: Division por cero";
-                        }
-                        return a / b;
-                    };
+
                 </script>
             </div>
         </div>
@@ -101,7 +102,7 @@
             <h2 class="w3-center">Ejercicio 3 Potencia de un numero</h2>
 
             <div class="w3-half w3-padding">
-                <div class="w3-code notranslate">
+                <div class="w3-code notranslate w3-black">
                     <h3>Funcion Tradicional</h3>
                     <pre>
                         function potencia(base, exponente) {
@@ -112,19 +113,17 @@
                     <pre>
                         const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
                     </pre>
-                    <h3>Pruebas</h3>
-
                 </div>
             </div>
             <div class="w3-half w3-padding w3-border">
                 <h3>Pruebas</h3>
                 <script>
+                    const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
                     document.write("Potencia Tradicional (2^3): " + potencia(2, 3) + "<br>");
                     document.write("Potencia Flecha (2^3): " + potenciaFlecha(2, 3) + "<br>");
                     function potencia(base, exponente) {
                         return Math.pow(base, exponente);
                     }
-                    const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
                 </script>
             </div>
         </div>
@@ -146,19 +145,18 @@
                     <pre>
                         const mayorFlecha = (a, b) => (a > b) ? a : b;
                     </pre>
-                    <h3>Pruebas</h3>
-
                 </div>
             </div>
             <div class="w3-half w3-padding w3-border">
                 <h3>Pruebas</h3>
                 <script>
+                    const mayorFlecha = (a, b) => (a > b) ? a : b;
                     document.write("Mayor Tradicional (5, 10): " + mayor(5, 10) + "<br>");
                     document.write("Mayor Flecha (5, 10): " + mayorFlecha(5, 10) + "<br>");
                     function mayor(a, b) {
                         return (a > b) ? a : b;
                     }
-                    const mayorFlecha = (a, b) => (a > b) ? a : b;
+
                 </script>
             </div>
         </div>
@@ -181,8 +179,6 @@
                             elemento.style.backgroundColor = color;
                         };
                     </pre>
-                    <h3>Pruebas</h3>
-
                 </div>
             </div>
             <div class="w3-half w3-padding w3-border">
@@ -190,7 +186,7 @@
                 <script>
                     document.write("Prueba de cambio de color al pasar el mouse sobre el area azul claro.<br>");
                     h2 = document.querySelector("h2");
-                    cambiarColor(h2,'blue');
+                    cambiarColor(h2, 'blue');
                     function cambiarColor(elemento, color) {
                         elemento.style.backgroundColor = color;
                     }
@@ -201,6 +197,460 @@
             </div>
         </div>
     </div>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio 5 Funcion que toma otra funcion como parametro</h2>
+            <p>Este ejercicio se centra en la creación de una función que toma dos números y otra función como
+                parámetros, demostrando el concepto defunciones de orden superior</p>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function operar(a, b, operacion) {
+                            return operacion(a, b);
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const operarFlecha = (a, b, operacion) => operacion(a, b);
+                    </pre>
+                    <pre>
+                        const sumar1 = (x, y) => x + y;
+                        const multiplicar1 = (x, y) => x * y;
+                        document.writer(operacionar(5,3,sumar1));
+                        document.write(operacionar(5, 3, multiplicar1));
+                    </pre>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h3>Pruebas</h3>
+                <script>
+                    function operacionar(a, b, operacion) {
+                        return operacion(a, b);
+                    }
+                    const sumar1 = (x, y) => x + y;
+                    const multiplicar1 = (x, y) => x * y;
+                    document.write(operacionar(5, 3, sumar1));
+                    document.write("<br>");
+                    document.write(operacionar(5, 3, multiplicar1));
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio</h2>
+            <p>Agrega 2 operaciones más y mandalas llamar.</p>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function operacionar(a, b, operacion) {
+                            return operacion(a, b);
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const operarFlecha = (a, b, operacion) => operacion(a, b);
+                    </pre>
+                    <pre>
+                        const restar = (x, y) => x - y;
+                        const dividir = (x, y) => x / y;
+                        document.write(operacionar(5,3,restar));
+                        document.write(operacionar(6,3,dividir));
+                    </pre>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h2>Prueba</h2>
+                <script>
+                    function operacionar1(a, b, operacion1) {
+                        return operacion1(a, b);
+                    }
+                    const restar1 = (x, y) => x - y;
+                    const dividir1 = (x, y) => x / y;
+                    document.write("Restar:");
+                    document.write(operacionar1(5, 3, restar1));
+                    document.write("<br>");
+                    document.write("Dividir:");
+                    document.write(operacionar1(6, 3, dividir1));
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejerccio 6 Funcion de Orden Superior con map</h2>
+            <p>Este ejercicio muestra cómo crear una función que aplica una operación a cada elemento de un array
+                utilizando el método map</p>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function aplicarOperacion(arr, operacion) {
+                            return arr.map(operacion);
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const aplicarOperacionFlecha = (arr, operacion) => arr.map(operacion);
+                    </pre>
+                    <pre>
+                        const cuadrado = x => x * x;
+                        const numeros = [1, 2, 3, 4, 5];
+                        document.write(aplicarOperacion(numeros, cuadrado));
+                        document.write(aplicarOperacionFlecha(numeros, cuadrado));
+                    </pre>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h2>Pruebas</h2>
+                <script>
+                    function aplicarOperacion(arr, operacion) {
+                        return arr.map(operacion);
+                    }
+                    const duplicar = x => x * 2;
+                    const numeros = [1, 2, 3, 4];
+                    document.write("Funcion Tradicional: ");
+                    document.write(aplicarOperacion(numeros, duplicar));
+                    document.write("<br>");
+                    document.write("Funcion Flecha: ");
+                    const aplicarOperacionFlecha = (arr, operacion) => arr.map(operacion);
+                    document.write(aplicarOperacionFlecha(numeros, duplicar));
+                    document.write("<br>");
+
+                    const cuadrado = y => y * y;
+                    document.write("Funcion Tradicional: ");
+                    document.write(aplicarOperacion(numeros, cuadrado));
+                    document.write("<br>");
+                    document.write("Funcion Flecha: ");
+                    const aplicarOperacionFlecha1 = (arr, op) => arr.map(op);
+                    document.write(aplicarOperacionFlecha1(numeros, cuadrado));
+
+
+                </script>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio 7 Closure para contar</h2>
+
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function crearContador() {
+                            let contador = 0;
+                            return function() {
+                                contador++;
+                                return contador;
+                            };
+                        }
+                    </pre>
+                    <h3>Funcion Flecha</h3>
+                    <pre>
+                        const crearContadorFlecha = () => {
+                            let contador = 0;
+                            return () => {
+                                contador++;
+                                return contador;
+                            };
+                        };
+                    </pre>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h2>Prueba<h2>
+                        <script>
+                            function crearContador() {
+                                let contador = 0;
+                                return function () {
+                                    contador++;
+                                    return contador;
+                                };
+                            }
+
+                            const crearContadorFlecha = () => {
+                                let contador = 0;
+                                return () => {
+                                    contador++;
+                                    return contador;
+                                };
+                            };
+
+                            const contador = crearContador();
+
+                            document.write(contador());
+                            document.write("<br>");
+                            document.write(contador());
+                            document.write("<br>");
+                            document.write(contador());
+                            document.write("<br>");
+
+                        </script>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio 8 Funcion de orden superior que retorna otra funcion</h2>
+            <p>Este ejercicio demuestra cómo crear una función que devuelve otra función, ilustrando el concepto de
+                closures en JavaScript</p>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        function crearSaludo(saludo) {
+                            return function(nombre) {
+                                return `${saludo}, ${nombre}!`;
+                            };
+                        }
+                    </pre>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h2>Prueba</h2>
+                <script>
+                    function crearSaludo(saludo) {
+                        return function (nombre) {
+                            return `${saludo}, ${nombre}!`;
+                        };
+                    }
+
+                    const saludarHola = crearSaludo("Hola");
+                    const saludarAdios = crearSaludo("Adios");
+
+                    document.write(saludarHola("Sam"));
+                    document.write("<br>");
+                    document.write(saludarAdios("Sam"));
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio 9 Funciones con Argumentos predeterminados</h2>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                       function crearMultiplicador(factor) {
+                            return function(numero) {
+                                return numero * factor;
+                            };
+                        }
+                    </pre>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h2>Prueba</h2>
+                <script>
+                    function crearMultiplicador(factor) {
+                        return function (numero) {
+                            return numero * factor;
+                        };
+                    }
+
+                    const duplicar2 = crearMultiplicador(2);
+                    const triplicar2 = crearMultiplicador(3);
+                    const multiplicarPorDefecto2 = crearMultiplicador();
+
+                    document.write("Duplicar 5: " + duplicar2(5));
+                    document.write("<br>");
+                    document.write("Triplicar 5: " + triplicar2(5));
+                    document.write("<br>");
+                    document.write("Multiplicar por defecto (2) 5: " + multiplicarPorDefecto2(5));
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Patron Revelador</h2>
+            <p>El patrón revelador es un patrón de diseño que utiliza closures para encapsular la lógica y exponer solo
+                ciertas partes de un objeto o módulo. Esto permite ocultar la implementación interna y proteger el
+                estado</p>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                        const Contador = (function() {
+                            let contador = 0;
+
+                            function incrementar() {
+                                contador++;
+                            }
+
+                            function decrementar() {
+                                contador--;
+                            }
+
+                            function obtenerValor() {
+                                return contador;
+                            }
+
+                            return {
+                                incrementar,
+                                decrementar,
+                                obtenerValor
+                            };
+                        })();
+                    </pre>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h2>Prueba</h2>
+                <script>
+                    const Contador = (function() {
+                            let contador = 0;
+
+                            function incrementar() {
+                                contador++;
+                            }
+
+                            function decrementar() {
+                                contador--;
+                            }
+
+                            function obtenerValor() {
+                                return contador;
+                            }
+
+                            return {
+                                incrementar,
+                                decrementar,
+                                obtenerValor
+                            };
+                        })();
+                    document.write("Valor inicial: " + Contador.obtenerValor());
+                    document.write("<br>");
+                    Contador.incrementar();
+                    Contador.incrementar();
+                    document.write("Valor despues de incrementar 2 veces: " + Contador.obtenerValor());
+                    document.write("<br>");
+                    Contador.decrementar();
+                    document.write("Valor despues de decrementar 1 vez: " + Contador.obtenerValor());
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Juego de Adivinar</h2>
+            <p>Seleccione un numero aletario del 1 al 100 </p>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+                    <h3>Funcion Tradicional</h3>
+                    <pre>
+                       function juegoAdivinar() {
+                        const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+                        let intentos = 0;
+
+                        return function(adivinanza) {
+                            intentos++;
+                            if (adivinanza === numeroSecreto) {
+                                return `Felicidades! Adivinaste el numero ${numeroSecreto} en ${intentos} intentos.`;
+                            } else if (adivinanza < numeroSecreto) {
+                                return "Demasiado bajo! Intenta de nuevo.";
+                            } else {
+                                return "Demasiado alto! Intenta de nuevo.";
+                            }
+                        };
+                    }
+
+                    const adivinar = juegoAdivinar();
+
+                    document.getElementById("inputAdivinar").addEventListener("change", function() {
+                        const valor = parseInt(this.value);
+                        const resultado = adivinar(valor);
+                        alert(resultado);
+                        this.value = "";
+                    });
+                </pre>
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <h2>Prueba</h2>
+                <input type="text" id="inputAdivinar" placeholder="Ingresa un numero del 1 al 100" height="30px">
+                <p>Ingrese el rango que quiere jugar</p>
+                <input type="number" id="minimo" placeholder="Minimo" value="1">
+                <input type="number" id="maximo" placeholder="Maximo" value="100">
+                <button id="iniciarJuego">Iniciar Juego</button>
+                <script>
+                    function juegoAdivinar(min, max) {
+                        const numeroSecreto = Math.floor(Math.random() * (max - min + 1)) + min;
+                        let intentos = 0;
+
+                        return function(adivinanza) {
+                            intentos++;
+                            if (adivinanza === numeroSecreto) {
+                                return `Felicidades! Adivinaste el numero ${numeroSecreto} en ${intentos} intentos.`;
+                            } else if (adivinanza < numeroSecreto) {
+                                return "Demasiado bajo! Intenta de nuevo.";
+                            } else {
+                                return "Demasiado alto! Intenta de nuevo.";
+                            }
+                        };
+                    }
+
+                    let adivinar;
+
+                    document.getElementById("iniciarJuego").addEventListener("click", function() {
+                        const min = parseInt(document.getElementById("minimo").value);
+                        const max = parseInt(document.getElementById("maximo").value);
+                        adivinar = juegoAdivinar(min, max);
+                        alert(`Juego iniciado! Adivina un numero entre ${min} y ${max}.`);
+                    });
+
+                    document.getElementById("inputAdivinar").addEventListener("change", function() {
+                        if (!adivinar) {
+                            alert("Por favor, inicia el juego primero.");
+                            this.value = "";
+                            return;
+                        }
+                        const valor = parseInt(this.value);
+                        const resultado = adivinar(valor);
+                        alert(resultado);
+                        this.value = "";
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container w3-red">
+        <div class="w3-row">
+            <h2 class="w3-center">Ejercicio Personal</h2>
+            <p>Ejercicio Personal utilizando fuciones de orden superior para </p>
+            <div class="w3-half w3-padding">
+                <div class="w3-code notranslate w3-black">
+
+                </div>
+            </div>
+            <div class="w3-half w3-padding w3-border">
+                <script>
+
+                </script>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Plantilla -->
 

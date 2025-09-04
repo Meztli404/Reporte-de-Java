@@ -10,55 +10,143 @@
 </head>
 
 <body>
-    <hr>
-    <hr>
-    <div class="w3-container w3-red">
-        <h1 class="w3-center">Ejercicios de 1 </h1>
-        <h2 class="w3-center">28/08/2025</h2>
-        <div class="w3-row">
-            <div class="w3-half w3-red ">
+    <!-- Barra de navegación -->
+    <div class="w3-bar w3-blue w3-large w3-center">
+        <a href="../index.html" class="w3-bar-item w3-button w3-hover-light-blue">Inicio</a>
+        <a href="dom.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Dom</a>
+        <a href="Funciones.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Funciones</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 5</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 6</a>
+    </div>
 
-                <div class="w3-code w3-black">
-                    body
-                    const myDiv = document.getElementById('myDiv');
-                    document.write("myDiv");
-                    document.writeln("br")
-                    document.write(myDiv);
-                    document.writeln("br")
-                    document.writeln("br")
-                    <br>
-                    //Seleccionar elementos por clase
-                    const elementsByClass = document.getElementsByClassName('myClass');
-                    document.write("elementsByClass");
-                    document.writeln("br")
-                    document.write(elementsByClass);
-                    document.writeln("br")
-                    document.writeln("br")
-                    <br>
-                    //Seleccionar elementos por etiqueta
-                    const elementsByTag = document.getElementsByTagName('div');
-                    document.write("elementsByTag");
-                    document.writeln("br")
-                    document.write(elementsByTag);
-                    document.writeln("br")
-                    document.writeln("br")
-                    <br>
-                    //Seleccionar un elemento con querySelector
-                    const queryElement = document.querySelector('myDiv');
-                    document.write("queryElement");
-                    document.writeln("br")
-                    document.write(queryElement);
-                    document.writeln("br")
-                    document.writeln("br")
-                    <br>
-                    //Seleccionar todos los elementos con querySelectorAll
-                    const queryAllElements = document.querySelectorAll('div')
-                    document.write("queryAllElements");
-                    document.writeln("br")
-                    document.write(queryAllElements);
-                </div>
+    <div class="hero">
+        <h1>DOM</h1>
+    </div>
+    <!-- Plantilla -->
+    <!-- <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">
+            Ejercicio 
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function saludo() {
+  alert("¡Hola, Programación Móvil!");
+}
+saludo();
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    <span class="w3-tag w3-blue">¡Hola, Programación Móvil!</span>
+                </p>
+            </div>
+        </div>
+    </div> -->
+    <br><br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">
+            Ejercicio
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function saludo() {
+  alert("¡Hola, Programación Móvil!");
+}
+saludo();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    <span class="w3-tag w3-blue">¡Hola, Programación Móvil!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <br>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">
+            Ejercicio 1
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            <!-- Columna de código -->
+            <div class="code-box">
+                <pre><code>
+body
+const myDiv = document.getElementById('myDiv');
+document.write("myDiv");
+document.writeln("br")
+document.write(myDiv);
+document.writeln("br")
+document.writeln("br")
+
+//Seleccionar elementos por clase
+const elementsByClass = document.getElementsByClassName('myClass');
+document.write("elementsByClass");
+document.writeln("br")
+document.write(elementsByClass);
+document.writeln("br")
+document.writeln("br")
+
+//Seleccionar elementos por etiqueta
+const elementsByTag = document.getElementsByTagName('div');
+document.write("elementsByTag");
+document.writeln("br")
+document.write(elementsByTag);
+document.writeln("br")
+document.writeln("br")
+
+//Seleccionar un elemento con querySelector
+const queryElement = document.querySelector('myDiv');
+document.write("queryElement");
+document.writeln("br")
+document.write(queryElement);
+document.writeln("br")
+document.writeln("br")
+
+//Seleccionar todos los elementos con querySelectorAll
+const queryAllElements = document.querySelectorAll('div')
+document.write("queryAllElements");
+document.writeln("br")
+document.write(queryAllElements);
+      </code></pre>
+            </div>
+
+            <!-- Columna de resultado -->
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <div id="myDiv111">Hello Word!</div>
                 <button id="changeText">Change Text</button>
                 <br><br>
@@ -99,87 +187,99 @@
                     document.write(queryAllElements);
 
                 </script>
-
             </div>
         </div>
-
-
-
     </div>
-    <hr>
-    <hr>
 
-    <div class="w3-container w3-blue">
-        <div class="w3-row">
-            <h1 class="w3-center">Ejercicios 2</h1>
-            <div id="myDiv1" class="myClass ">Hello World</div>
-            <div class="w3-half w3-padding">
-                <h2 class="w3-center">Codigo</h2>
-                <div class="w3-code w3-black">
-                    const myDiv1 = document.getElementById('myDiv');
+    <br>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">
+            Ejercicio 2
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+const myDiv1 = document.getElementById('myDiv');
+
+//Cambiar el texto del elemento
+document.getElementById('changeText1').addEventListener('click', () => {
+myDiv.textContent = 'Text Changed!';
+});
+
+//Cambiar el estilo del elemento
+document.getElementById('changeStyle1').addEventListener('click', () => {
+myDiv.style.color = 'red';
+myDiv.style.fontSize = '24px';
+});
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <button id="changeText1">Change Text</button>
+                <button id="changeStyle1">Change Style</button>
+                <script>
+                    const myDiv1 = document.getElementById('myDiv1');
 
                     //Cambiar el texto del elemento
                     document.getElementById('changeText1').addEventListener('click', () => {
-                    myDiv.textContent = 'Text Changed!';
+                        myDiv1.textContent = 'Text Changed!';
                     });
 
-                    //Cambiar el estilo del elemento
+                    //Cambiar el estilo del elemento 
                     document.getElementById('changeStyle1').addEventListener('click', () => {
-                    myDiv.style.color = 'red';
-                    myDiv.style.fontSize = '24px';
+                        myDiv1.style.color = 'red';
+                        myDiv1.style.fontSize = '24px';
                     });
-                </div>
-            </div>
-            <div class="w3-half w3-padding w3-border">
-                <button id="changeText1">Change Text</button>
-                <button id="changeStyle1">Change Style</button>
+
+                </script>
             </div>
         </div>
-
-        <script>
-            const myDiv1 = document.getElementById('myDiv1');
-
-            //Cambiar el texto del elemento
-            document.getElementById('changeText1').addEventListener('click', () => {
-                myDiv1.textContent = 'Text Changed!';
-            });
-
-            //Cambiar el estilo del elemento 
-            document.getElementById('changeStyle1').addEventListener('click', () => {
-                myDiv1.style.color = 'red';
-                myDiv1.style.fontSize = '24px';
-            });
-
-        </script>
     </div>
-    <hr>
-    <hr>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h1 class="w3-center">Ejemplo 3</h1>
 
-            <div class="w3-half w3-padding">
-                <div class="w3-code w3-black">
-                    const myDiv3 = document.getElementById('myDiv3');
-                    // Manejar el evento click
+    <br>
 
-                    myDiv3.addEventListener('click', () => {
-                    alert('Div clicked!');
-                    myDiv3.style.backgroundColor = 'lightblue';
-                    });
-                    //Manejar el evento mouseover
-                    myDiv3.addEventListener('mouseover', () => {
-                    myDiv3.style.backgroundColor = 'yellow';
-                    });
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
 
-                    //Manejar el evento mouseout
-                    myDiv3.addEventListener('mouseout', () => {
-                    myDiv3.style.backgroundColor = '';
-                    });
-                </div>
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">
+            Ejercicio 3
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+const myDiv3 = document.getElementById('myDiv3');
+// Manejar el evento click
+
+myDiv3.addEventListener('click', () => {
+alert('Div clicked!');
+myDiv3.style.backgroundColor = 'lightblue';
+});
+//Manejar el evento mouseover
+myDiv3.addEventListener('mouseover', () => {
+myDiv3.style.backgroundColor = 'yellow';
+});
+
+//Manejar el evento mouseout
+myDiv3.addEventListener('mouseout', () => {
+myDiv3.style.backgroundColor = '';
+});
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <div id="myDiv3">
                     Hover or Click Me!
                 </div>
@@ -203,98 +303,120 @@
                 </script>
             </div>
         </div>
-
-
-
     </div>
-    <hr>
-    <hr>
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h1 class="w3-center">Ejemplo 4 </h1>
-            <p>Crear una Página HTML Simple y Manipular el
-                DOM con JavaScript</p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code w3-black">
-                    // Cambiar el contenido del título y los párrafos
-                    document.getElementById('changeContent').addEventListener('click', () => {
-                    document.getElementById('title').textContent = 'Updated Web Page';
-                    const paragraphs = document.getElementsByClassName('text');
-                    for (let p of paragraphs) {
-                    p.textContent = 'This paragraph has been updated.';
-                    }
-                    });
 
-                    // Resaltar el texto de los párrafos
-                    document.getElementById('highlightText').addEventListener('click', () => {
-                    const paragraphs = document.getElementsByClassName('text');
-                    for (let p of paragraphs) {
-                    p.classList.add('highlight');
-                    }
-                    });
-                </div>
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">
+            Ejercicio 4
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Cambiar el contenido del título y los párrafos
+document.getElementById('changeContent').addEventListener('click', () => {
+document.getElementById('title').textContent = 'Updated Web Page';
+const paragraphs = document.getElementsByClassName('text');
+for (let p of paragraphs) {
+p.textContent = 'This paragraph has been updated.';
+}
+});
+
+// Resaltar el texto de los párrafos
+document.getElementById('highlightText').addEventListener('click', () => {
+const paragraphs = document.getElementsByClassName('text');
+for (let p of paragraphs) {
+p.classList.add('highlight');
+}
+});
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <h2 id="title">My Web Page</h2>
                 <p class="text">This is a paragraph</p>
                 <p class="text">This is another paragraph</p>
                 <button id="changeContent">Change Content</button>
                 <button id="highlightText">Highlight Text</button>
-            </div>
-            <script>
-                // Cambiar el contenido del título y los párrafos
-                document.getElementById('changeContent').addEventListener('click', () => {
-                    document.getElementById('title').textContent = 'Updated Web Page';
-                    const paragraphs = document.getElementsByClassName('text');
-                    for (let p of paragraphs) {
-                        p.textContent = 'This paragraph has been updated.';
-                    }
-                });
+                <script>
+                    // Cambiar el contenido del título y los párrafos
+                    document.getElementById('changeContent').addEventListener('click', () => {
+                        document.getElementById('title').textContent = 'Updated Web Page';
+                        const paragraphs = document.getElementsByClassName('text');
+                        for (let p of paragraphs) {
+                            p.textContent = 'This paragraph has been updated.';
+                        }
+                    });
 
-                // Resaltar el texto de los párrafos
-                document.getElementById('highlightText').addEventListener('click', () => {
-                    const paragraphs = document.getElementsByClassName('text');
-                    for (let p of paragraphs) {
-                        p.classList.add('highlight');
-                    }
-                });
-            </script>
+                    // Resaltar el texto de los párrafos
+                    document.getElementById('highlightText').addEventListener('click', () => {
+                        const paragraphs = document.getElementsByClassName('text');
+                        for (let p of paragraphs) {
+                            p.classList.add('highlight');
+                        }
+                    });
+                </script>
+
+
+            </div>
         </div>
     </div>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h1 class="w3-center">Ejercicio</h1>
-            <p>Crear una página HTML simple y usar JavaScript para seleccionar elementos del DOM,
-                manipular su contenido y estilos, y manejar eventos del DOM</p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code w3-black">
-                    b = document.querySelector('.text');
-                    ls= document.querySelector('li.cambioLs');
-                    tituloejercicio = document.getElementById('tituloejercicio');
-                    cambioLs = document.querySelector('li.cambioLs');
-                    document.getElementById('cambioTextos').addEventListener('click', () => {
-                    const paragraphs = document.getElementsByClassName('text');
-                    for (let p of paragraphs) {
-                    b.textContent = 'Este parrafo ha sido actualizado';
 
-                    ls.textContent = 'Elemento de lista actualizado';
-                    }
-                    document.getElementById('tituloejercicio').textContent = 'Pagina Actualizada';
 
-                    tituloejercicio.classList.remove('tituloejercicio');
-                    tituloejercicio.classList.add('t2');
-                    });
-                    document.getElementById('cambioLista').addEventListener('click', () => {
-                    const items = document.querySelectorAll('ul li');
-                    items.forEach((item, index) => {
-                    item.textContent = `Elemento ${index + 1} actualizado`;
-                    });
-                    cambioLs.classList.add('lista');
-                    });
-                </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">
+            Ejercicio
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+b = document.querySelector('.text');
+ls= document.querySelector('li.cambioLs');
+tituloejercicio = document.getElementById('tituloejercicio');
+cambioLs = document.querySelector('li.cambioLs');
+document.getElementById('cambioTextos').addEventListener('click', () => {
+const paragraphs = document.getElementsByClassName('text');
+for (let p of paragraphs) {
+b.textContent = 'Este parrafo ha sido actualizado';
+
+ls.textContent = 'Elemento de lista actualizado';
+}
+document.getElementById('tituloejercicio').textContent = 'Pagina Actualizada';
+
+tituloejercicio.classList.remove('tituloejercicio');
+tituloejercicio.classList.add('t2');
+});
+document.getElementById('cambioLista').addEventListener('click', () => {
+const items = document.querySelectorAll('ul li');
+items.forEach((item, index) => {
+item.textContent = `Elemento ${index + 1} actualizado`;
+});
+cambioLs.classList.add('lista');
+});
+
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border principal">
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <h1 id="tituloejercicio">My Web Page</h1>
                 <b class="text mouse">This is a paragraph</b>
                 <ul>
@@ -304,53 +426,42 @@
                 </ul>
                 <button id="cambioTextos">Cambiar Lista</button>
                 <button id="cambioLista">Cambiar Lista</button>
+                <script>
+                    b = document.querySelector('.text');
+                    ls = document.querySelector('li.cambioLs');
+                    tituloejercicio = document.getElementById('tituloejercicio');
+                    cambioLs = document.querySelector('li.cambioLs');
+                    document.getElementById('cambioTextos').addEventListener('click', () => {
+                        const paragraphs = document.getElementsByClassName('text');
+                        for (let p of paragraphs) {
+                            b.textContent = 'Este parrafo ha sido actualizado';
+
+                            ls.textContent = 'Elemento de lista actualizado';
+                        }
+                        document.getElementById('tituloejercicio').textContent = 'Pagina Actualizada';
+
+                        tituloejercicio.classList.remove('tituloejercicio');
+                        tituloejercicio.classList.add('t2');
+                    });
+                    document.getElementById('cambioLista').addEventListener('click', () => {
+                        const items = document.querySelectorAll('ul li');
+                        items.forEach((item, index) => {
+                            item.textContent = `Elemento ${index + 1} actualizado`;
+                        });
+                        cambioLs.classList.add('lista');
+                    });
+                    principal = document.querySelector('.principal');
+                    principal.addEventListener('mouseout', () => {
+                        principal.style.backgroundColor = 'lightblue';
+                    }); 
+                </script>
+
             </div>
         </div>
-        <script>
-            b = document.querySelector('.text');
-            ls = document.querySelector('li.cambioLs');
-            tituloejercicio = document.getElementById('tituloejercicio');
-            cambioLs = document.querySelector('li.cambioLs');
-            document.getElementById('cambioTextos').addEventListener('click', () => {
-                const paragraphs = document.getElementsByClassName('text');
-                for (let p of paragraphs) {
-                    b.textContent = 'Este parrafo ha sido actualizado';
-
-                    ls.textContent = 'Elemento de lista actualizado';
-                }
-                document.getElementById('tituloejercicio').textContent = 'Pagina Actualizada';
-
-                tituloejercicio.classList.remove('tituloejercicio');
-                tituloejercicio.classList.add('t2');
-            });
-            document.getElementById('cambioLista').addEventListener('click', () => {
-                const items = document.querySelectorAll('ul li');
-                items.forEach((item, index) => {
-                    item.textContent = `Elemento ${index + 1} actualizado`;
-                });
-                cambioLs.classList.add('lista');
-            });
-            principal = document.querySelector('.principal');
-            principal.addEventListener('mouseout', () => {
-                principal.style.backgroundColor = 'lightblue';
-            }); 
-        </script>
     </div>
 
-    <!-- Plantilla -->
 
-    <!-- <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h1 class="w3-center">Titulo</h1>
-
-            <div class="w3-half w3-padding">
-
-            </div>
-            <div class="w3-half w3-padding w3-border">
-
-            </div>
-        </div>
-    </div> -->
+    <br>
 
 
 
