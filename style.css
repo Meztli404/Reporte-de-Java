@@ -111,3 +111,7 @@ body {font-family: "Roboto", sans-serif;}
       margin-bottom: 10px;
       color: #00c3ff;
     }
+
+    h2{
+        background-color: #ffffff00!important;
+    }

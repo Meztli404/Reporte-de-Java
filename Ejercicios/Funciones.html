@@ -7,31 +7,83 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
 </head>
 
 <body>
-    <h1>Funciones en JavaScript</h1>
+    <div class="w3-bar w3-blue  w3-large w3-center">
+        <a href="../index.html" class="w3-bar-item w3-button w3-hover-light-blue">Inicio</a>
+        <a href="dom.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Dom</a>
+        <a href="Funciones.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Funciones</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 5</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 6</a>
+    </div>
+    <div class="hero">
+        <h1>Funciones de JavaScript</h1>
+    </div>
     <hr>
-    <hr>
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Sumas</h2>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function sumar(a, b) {
-                            return a + b;
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const sumarFlecha = (a, b) => a + b;
-                    </pre>
-                </div>
+
+    <!-- Plantilla -->
+    <!-- <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function saludo() {
+  alert("¡Hola, Programación Móvil!");
+}
+saludo();
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h3>Pruebas</h3>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    <span class="w3-tag w3-blue">¡Hola, Programación Móvil!</span>
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: rgb(255, 255, 255); font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);  background-color: rgb(255, 0, 0) !important;">
+            Ejercicio 1 Suma
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+<h3>Funcion Tradicional</h3>
+function sumar(a, b) {
+    return a + b;
+}
+
+<h3>Funcion Flecha</h3>
+const sumarFlecha = (a, b) => a + b;
+
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     const sumarFlecha = (a, b) => a + b;
                     document.write("Suma Tradicional: " + sumar(5, 3) + "<br>");
@@ -44,36 +96,43 @@
             </div>
         </div>
     </div>
-    <hr>
-    <hr>
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Division de dos numeros</h2>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function dividir(a, b) {
-                            if (b === 0) {
-                                return "Error: Division por cero";
-                            }
-                            return a / b;
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const dividirFlecha = (a, b) => {
-                            if (b === 0) {
-                                return "Error: Division por cero";
-                            }
-                            return a / b;
-                        };
-                    </pre>
 
-                </div>
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1) !important;">
+            Ejercicio 2 Division de dos numeros
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+<h3>Funcion Tradicional</h3>
+function dividir(a, b) {
+        if (b === 0) {
+            return "Error: Division por cero";
+        }
+        return a / b;
+    }
+
+<h3>Funcion Flecha</h3>
+const dividirFlecha = (a, b) => {
+        if (b === 0) {
+            return "Error: Division por cero";
+        }
+        return a / b;
+    };
+
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h3>Pruebas</h3>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     const dividirFlecha = (a, b) => {
                         if (b === 0) {
@@ -97,26 +156,34 @@
         </div>
     </div>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio 3 Potencia de un numero</h2>
+    <br>
 
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function potencia(base, exponente) {
-                            return Math.pow(base, exponente);
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
-                    </pre>
-                </div>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 3 Potencia de un Numero
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                
+                <pre><code>
+<h3>Funcion Tradicional</h3>
+function potencia(base, exponente) {
+        return Math.pow(base, exponente);
+    }
+<h3>Funcion Flecha</h3>
+const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
+                    
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h3>Pruebas</h3>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
                     document.write("Potencia Tradicional (2^3): " + potencia(2, 3) + "<br>");
@@ -129,26 +196,35 @@
         </div>
     </div>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio 4 Mayor de 2 Numeros</h2>
+    <br>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
 
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function mayor(a, b) {
-                            return (a > b) ? a : b;
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const mayorFlecha = (a, b) => (a > b) ? a : b;
-                    </pre>
-                </div>
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 4 Mayor de 2 Numeros
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+<h3>Funcion Tradicional</h3>
+
+function mayor(a, b) {
+    return (a > b) ? a : b;
+}
+
+<h3>Funcion Flecha</h3>
+
+const mayorFlecha = (a, b) => (a > b) ? a : b;
+                    
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h3>Pruebas</h3>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     const mayorFlecha = (a, b) => (a > b) ? a : b;
                     document.write("Mayor Tradicional (5, 10): " + mayor(5, 10) + "<br>");
@@ -162,70 +238,87 @@
         </div>
     </div>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio Personal</h2>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function cambiarColor(elemento, color) {
-                            elemento.style.backgroundColor = color;
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const cambiarColorFlecha = (elemento, color) => {
-                            elemento.style.backgroundColor = color;
-                        };
-                    </pre>
-                </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Personal
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+<h3>Funcion Tradicional</h3>
+
+function cambiarColor(elemento, color) {
+    elemento.style.backgroundColor = color;
+}
+
+<h3>Funcion Flecha</h3>
+
+const cambiarColorFlecha = (elemento, color) => {
+    elemento.style.backgroundColor = color;
+};
+
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h2>Prueba</h2>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <h2 class="aa">Prueba</h2>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     document.write("Prueba de cambio de color al pasar el mouse sobre el area azul claro.<br>");
-                    h2 = document.querySelector("h2");
-                    cambiarColor(h2, 'blue');
+                    h2 = document.querySelector("h2.aa");
+                    
                     function cambiarColor(elemento, color) {
-                        elemento.style.backgroundColor = color;
+                        elemento.style.color = color;
                     }
                     const cambiarColorFlecha = (elemento, color) => {
-                        elemento.style.backgroundColor = color;
+                        elemento.style.color = color;
                     };
+                    cambiarColor(h2, 'red');
                 </script>
             </div>
         </div>
     </div>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio 5 Funcion que toma otra funcion como parametro</h2>
-            <p>Este ejercicio se centra en la creación de una función que toma dos números y otra función como
-                parámetros, demostrando el concepto defunciones de orden superior</p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function operar(a, b, operacion) {
-                            return operacion(a, b);
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const operarFlecha = (a, b, operacion) => operacion(a, b);
-                    </pre>
-                    <pre>
-                        const sumar1 = (x, y) => x + y;
-                        const multiplicar1 = (x, y) => x * y;
-                        document.writer(operacionar(5,3,sumar1));
-                        document.write(operacionar(5, 3, multiplicar1));
-                    </pre>
+    <br>
 
-                </div>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 5 Funcion que toma otra funcion como parametro
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+<h3>Funcion Tradicional</h3>
+function operar(a, b, operacion) {
+    return operacion(a, b);
+}
+<h3>Funcion Flecha</h3>
+const operarFlecha = (a, b, operacion) => operacion(a, b);
+const sumar1 = (x, y) => x + y;
+const multiplicar1 = (x, y) => x * y;
+document.writer(operacionar(5,3,sumar1));
+document.write(operacionar(5, 3, multiplicar1));
+
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h3>Pruebas</h3>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     function operacionar(a, b, operacion) {
                         return operacion(a, b);
@@ -236,37 +329,48 @@
                     document.write("<br>");
                     document.write(operacionar(5, 3, multiplicar1));
                 </script>
+
             </div>
         </div>
     </div>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio</h2>
-            <p>Agrega 2 operaciones más y mandalas llamar.</p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function operacionar(a, b, operacion) {
-                            return operacion(a, b);
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const operarFlecha = (a, b, operacion) => operacion(a, b);
-                    </pre>
-                    <pre>
-                        const restar = (x, y) => x - y;
-                        const dividir = (x, y) => x / y;
-                        document.write(operacionar(5,3,restar));
-                        document.write(operacionar(6,3,dividir));
-                    </pre>
+    <br>
 
-                </div>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 
+        </h2>
+        
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+<h3>Funcion Tradicional</h3>
+
+function operacionar(a, b, operacion) {
+    return operacion(a, b);
+}
+
+<h3>Funcion Flecha</h3>
+
+const operarFlecha = (a, b, operacion) => operacion(a, b);
+
+const restar = (x, y) => x - y;
+const dividir = (x, y) => x / y;
+document.write(operacionar(5,3,restar));
+document.write(operacionar(6,3,dividir));
+
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h2>Prueba</h2>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Agrega 2 operacoines mas y mandalas llamar.</p>
                 <script>
                     function operacionar1(a, b, operacion1) {
                         return operacion1(a, b);
@@ -282,6 +386,17 @@
             </div>
         </div>
     </div>
+
+    <br>
+
+    <hr>
+    <hr>
+    
+
+
+    
+
+
 
     <div class="w3-container w3-red">
         <div class="w3-row">
@@ -515,27 +630,27 @@
             <div class="w3-half w3-padding w3-border">
                 <h2>Prueba</h2>
                 <script>
-                    const Contador = (function() {
-                            let contador = 0;
+                    const Contador = (function () {
+                        let contador = 0;
 
-                            function incrementar() {
-                                contador++;
-                            }
+                        function incrementar() {
+                            contador++;
+                        }
 
-                            function decrementar() {
-                                contador--;
-                            }
+                        function decrementar() {
+                            contador--;
+                        }
 
-                            function obtenerValor() {
-                                return contador;
-                            }
+                        function obtenerValor() {
+                            return contador;
+                        }
 
-                            return {
-                                incrementar,
-                                decrementar,
-                                obtenerValor
-                            };
-                        })();
+                        return {
+                            incrementar,
+                            decrementar,
+                            obtenerValor
+                        };
+                    })();
                     document.write("Valor inicial: " + Contador.obtenerValor());
                     document.write("<br>");
                     Contador.incrementar();
@@ -596,7 +711,7 @@
                         const numeroSecreto = Math.floor(Math.random() * (max - min + 1)) + min;
                         let intentos = 0;
 
-                        return function(adivinanza) {
+                        return function (adivinanza) {
                             intentos++;
                             if (adivinanza === numeroSecreto) {
                                 return `Felicidades! Adivinaste el numero ${numeroSecreto} en ${intentos} intentos.`;
@@ -610,14 +725,14 @@
 
                     let adivinar;
 
-                    document.getElementById("iniciarJuego").addEventListener("click", function() {
+                    document.getElementById("iniciarJuego").addEventListener("click", function () {
                         const min = parseInt(document.getElementById("minimo").value);
                         const max = parseInt(document.getElementById("maximo").value);
                         adivinar = juegoAdivinar(min, max);
                         alert(`Juego iniciado! Adivina un numero entre ${min} y ${max}.`);
                     });
 
-                    document.getElementById("inputAdivinar").addEventListener("change", function() {
+                    document.getElementById("inputAdivinar").addEventListener("change", function () {
                         if (!adivinar) {
                             alert("Por favor, inicia el juego primero.");
                             this.value = "";
