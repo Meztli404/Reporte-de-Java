@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <title>Arreglos</title>
+</head>
+<body>
+    <div class="w3-bar w3-blue  w3-large w3-center">
+        <a href="../index.html" class="w3-bar-item w3-button w3-hover-light-blue">Inicio</a>
+        <a href="dom.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Dom</a>
+        <a href="Funciones.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Funciones</a>
+        <a href="Arreglos.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Arreglos</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 5</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 6</a>
+    </div>
+    <div class="hero">
+        <h1>Funciones de Arreglos</h1>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Iteracion sobre Arreglos
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+const frutas = ["manzana", "banana","naranja","uva"];
+                    for (let i=0;i<frutas.length;i++){
+                        document.write(fritas[i] + br);
+                    }
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    
+                </p>
+                <script>
+                    const frutas = ["manzana", "banana","naranja","uva"];
+                    for (let i=0;i<frutas.length;i++){
+                        document.write(frutas[i] + "<br>");
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Metodos de Arreglos
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+const numeros =[1,2,4,5];
+const numerosDuplicados = numeros.map(num=>num*2);
+document.write(numerosDuplicados);
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    const numeros =[1,2,4,5];
+                    const numerosDuplicados = numeros.map(num=>num*2);
+                    document.write(numerosDuplicados);
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Metodos de Arreglos - Filter
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+const numeros1=[1,2,3,4,5];
+                    const numeroFiltrados1 = numeros1.filter(num=>num>2);
+                    document.write(numeroFiltrados1);
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    const numeros1=[1,2,3,4,5];
+                    const numeroFiltrados1 = numeros1.filter(num=>num>2);
+                    document.write(numeroFiltrados1);
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Metodo De Arreglos - Reduce
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+const suma = numeros.reduce((total, num)=>total + num,0);
+document.write(suma);
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    const suma = numeros.reduce((total, num)=>total + num,0);
+                    document.write(suma);
+                </script>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Encontrar el Mayor Numero
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function encontrarMayor(arr)
+{
+    return arr.reduce((max,num) => (num>max?num:max),arr[0]);
+}
+const numeros11 = [10,5,8,20,15];
+document.write(encontrarMayor(numeros11));
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    function encontrarMayor(arr)
+                    {
+                        return arr.reduce((max,num) => (num>max?num:max),arr[0]);
+                    }
+                    const numeros11 = [10,5,8,20,15];
+                    document.write(encontrarMayor(numeros11));
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Contar Propiedades de un Objeto
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function contarPropiedades(obj){
+    return Object.keys(obj).lenght;
+}
+const coche = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    año: 2020,
+    color: "Rojo"
+};
+console.log(contarPropiedades(coche)); 
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p>Una funcion que tome un objeto y devuelva el numero de propiedades que tiene </p>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    function contarPropiedades(obj){
+                        return Object.keys(obj).length;
+                    }
+                    const coche = {
+                        marca: "Toyota",
+                        modelo: "Corolla",
+                        año: 2020,
+                        color: "Rojo"
+                    };
+                    document.write("El carro tiene "+contarPropiedades(coche) + " propiedades<br>");
+    
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Transformacion de Arreglos de Objetos
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+const usuarios = [
+        {nombre: "Sam", edad: 25},
+        {nombre: "Ana", edad: 30},
+        {nombre: "Luis", edad: 28}
+    ];
+function obtenerNombres(arr){
+    return arr.map(usuarios => usuarios.nombre);
+}
+document.write(obtenerNombres(usuarios));
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    const usuarios = [
+                        {nombre: "Sam", edad: 25},
+                        {nombre: "Ana", edad: 30},
+                        {nombre: "Luis", edad: 28}
+                    ];
+                function obtenerNombres(arr){
+                    return arr.map(usuarios => usuarios.nombre);
+                }
+                document.write(obtenerNombres(usuarios));
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Arreglo de Objetos
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+const usuarios1 = [
+    {nombre: "Sam", edad: 25},
+    {nombre: "Ana", edad: 30},
+    {nombre: "Luis", edad: 28}
+];
+function filtrarUsuarios(arr){
+    return arr.filter(usuario => usuario.edad >27);
+}
+document.write(filtrarUsuarios(usuarios1));
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    const usuarios1 = [
+                        {nombre: "Sam", edad: 25},
+                        {nombre: "Ana", edad: 30},
+                        {nombre: "Luis", edad: 28}
+                    ];
+                    function filtrarUsuarios(arr){
+                        return arr.filter(usuario => usuario.edad > 27);
+                    }
+                    document.write(filtrarUsuarios(usuarios1));
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    const productoszap = [{nombre:"camiseta",categoria:"ropa"},
+                    {nombre:"pantalon",categoria:"ropa"}, {nombre:"zapatos",categoria:"calzado"},
+                    {nombre:"sandalias",categoria: "calzado"}];
+                    function agruparPorCategoria(arr){
+                        return arr.reduce((grupo, producto)=>{
+                            const categoria =producto.categoria;
+                            if(!grupo[categoria]){
+                                grupo[categoria]=[];
+                            }
+                            grupo[categoria].push(producto);
+                            return grupo;
+                        },{});
+                    }
+                   agruparPorCategoria(productoszap);
+                   document.write(JSON.stringify(agruparPorCategoria(productoszap)));   
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Personal
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Presione el boton para odenar la pila</p>
+                <button>Ordenar</button>
+                
+                <script>
+                    //Al momento de presionar el boton se ordena la pila
+                    const pila = [5,3,8,1,4];
+                    function ordenarPila(arr){
+                        return arr.sort((a,b)=>a-b);
+                    }
+                    document.querySelector("button").addEventListener("click",()=>{
+                        document.write("Pila ordenada: " + ordenarPila(pila));
+                    });
+                    document.write("Pila original: " + pila + "<br>");
+                    // Pila Ordenada
+                    pila.forEach(i => {
+                        document.write(pila(i));
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <!-- <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function saludo() {
+  alert("¡Hola, Programación Móvil!");
+}
+saludo();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    <span class="w3-tag w3-blue">¡Hola, Programación Móvil!</span>
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+</body>
+</html>

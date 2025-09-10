@@ -15,7 +15,7 @@
         <a href="../index.html" class="w3-bar-item w3-button w3-hover-light-blue">Inicio</a>
         <a href="dom.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Dom</a>
         <a href="Funciones.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Funciones</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 3</a>
+        <a href="Arreglos.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Arreglos</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 4</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 5</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 6</a>
@@ -62,7 +62,7 @@ saludo();
         style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
 
         <h2 class="w3-center"
-            style="color: rgb(255, 255, 255); font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);  background-color: rgb(255, 0, 0) !important;">
+            style="color: rgb(255, 255, 255); font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);  ">
             Ejercicio 1 Suma
         </h2>
 
@@ -167,9 +167,9 @@ const dividirFlecha = (a, b) => {
         </h2>
 
         <div class="code-container" style="margin-top: 20px;">
-            
+
             <div class="code-box">
-                
+
                 <pre><code>
 <h3>Funcion Tradicional</h3>
 function potencia(base, exponente) {
@@ -206,7 +206,7 @@ const potenciaFlecha = (base, exponente) => Math.pow(base, exponente);
         </h2>
 
         <div class="code-container" style="margin-top: 20px;">
-            
+
             <div class="code-box">
                 <pre><code>
 <h3>Funcion Tradicional</h3>
@@ -250,7 +250,7 @@ const mayorFlecha = (a, b) => (a > b) ? a : b;
         </h2>
 
         <div class="code-container" style="margin-top: 20px;">
-            
+
             <div class="code-box">
                 <pre><code>
 <h3>Funcion Tradicional</h3>
@@ -275,7 +275,7 @@ const cambiarColorFlecha = (elemento, color) => {
                 <script>
                     document.write("Prueba de cambio de color al pasar el mouse sobre el area azul claro.<br>");
                     h2 = document.querySelector("h2.aa");
-                    
+
                     function cambiarColor(elemento, color) {
                         elemento.style.color = color;
                     }
@@ -299,7 +299,7 @@ const cambiarColorFlecha = (elemento, color) => {
         </h2>
 
         <div class="code-container" style="margin-top: 20px;">
-            
+
             <div class="code-box">
                 <pre><code>
 <h3>Funcion Tradicional</h3>
@@ -341,12 +341,12 @@ document.write(operacionar(5, 3, multiplicar1));
 
         <h2 class="w3-center"
             style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
-            Ejercicio 
+            Ejercicio
         </h2>
-        
+
 
         <div class="code-container" style="margin-top: 20px;">
-            
+
             <div class="code-box">
                 <pre><code>
 <h3>Funcion Tradicional</h3>
@@ -389,43 +389,48 @@ document.write(operacionar(6,3,dividir));
 
     <br>
 
-    <hr>
-    <hr>
-    
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 6 Funcion de Orden Superior con map
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+function aplicarOperacion(arr, operacion) {
+    return arr.map(operacion);
+}
+const duplicar = x => x * 2;
+const numeros = [1, 2, 3, 4];
+document.write("Funcion Tradicional: ");
+document.write(aplicarOperacion(numeros, duplicar));
+document.write("br");
+document.write("Funcion Flecha: ");
+const aplicarOperacionFlecha = (arr, operacion) => arr.map(operacion);
+document.write(aplicarOperacionFlecha(numeros, duplicar));
+document.write("br");
+
+const cuadrado = y => y * y;
+document.write("Funcion Tradicional: ");
+document.write(aplicarOperacion(numeros, cuadrado));
+document.write("br");
+document.write("Funcion Flecha: ");
+const aplicarOperacionFlecha1 = (arr, op) => arr.map(op);
+document.write(aplicarOperacionFlecha1(numeros, cuadrado));
 
 
-    
-
-
-
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejerccio 6 Funcion de Orden Superior con map</h2>
-            <p>Este ejercicio muestra cómo crear una función que aplica una operación a cada elemento de un array
-                utilizando el método map</p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function aplicarOperacion(arr, operacion) {
-                            return arr.map(operacion);
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const aplicarOperacionFlecha = (arr, operacion) => arr.map(operacion);
-                    </pre>
-                    <pre>
-                        const cuadrado = x => x * x;
-                        const numeros = [1, 2, 3, 4, 5];
-                        document.write(aplicarOperacion(numeros, cuadrado));
-                        document.write(aplicarOperacionFlecha(numeros, cuadrado));
-                    </pre>
-
-                </div>
+              
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h2>Pruebas</h2>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     function aplicarOperacion(arr, operacion) {
                         return arr.map(operacion);
@@ -452,90 +457,117 @@ document.write(operacionar(6,3,dividir));
                 </script>
             </div>
         </div>
-
     </div>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio 7 Closure para contar</h2>
 
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function crearContador() {
-                            let contador = 0;
-                            return function() {
-                                contador++;
-                                return contador;
-                            };
-                        }
-                    </pre>
-                    <h3>Funcion Flecha</h3>
-                    <pre>
-                        const crearContadorFlecha = () => {
-                            let contador = 0;
-                            return () => {
-                                contador++;
-                                return contador;
-                            };
-                        };
-                    </pre>
+    <br>
 
-                </div>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 7 Closure para contar
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+function crearContador() {
+let contador = 0;
+return function () {
+    contador++;
+    return contador;
+};
+}
+
+const crearContadorFlecha = () => {
+let contador = 0;
+return () => {
+    contador++;
+    return contador;
+};
+};
+
+const contador = crearContador();
+
+document.write(contador());
+document.write("br");
+document.write(contador());
+document.write("br");
+document.write(contador());
+document.write("br");
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h2>Prueba<h2>
-                        <script>
-                            function crearContador() {
-                                let contador = 0;
-                                return function () {
-                                    contador++;
-                                    return contador;
-                                };
-                            }
 
-                            const crearContadorFlecha = () => {
-                                let contador = 0;
-                                return () => {
-                                    contador++;
-                                    return contador;
-                                };
-                            };
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    function crearContador() {
+                        let contador = 0;
+                        return function () {
+                            contador++;
+                            return contador;
+                        };
+                    }
 
-                            const contador = crearContador();
+                    const crearContadorFlecha = () => {
+                        let contador = 0;
+                        return () => {
+                            contador++;
+                            return contador;
+                        };
+                    };
 
-                            document.write(contador());
-                            document.write("<br>");
-                            document.write(contador());
-                            document.write("<br>");
-                            document.write(contador());
-                            document.write("<br>");
+                    const contador = crearContador();
 
-                        </script>
+                    document.write(contador());
+                    document.write("<br>");
+                    document.write(contador());
+                    document.write("<br>");
+                    document.write(contador());
+                    document.write("<br>");
+
+                </script>
             </div>
         </div>
     </div>
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio 8 Funcion de orden superior que retorna otra funcion</h2>
-            <p>Este ejercicio demuestra cómo crear una función que devuelve otra función, ilustrando el concepto de
-                closures en JavaScript</p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        function crearSaludo(saludo) {
-                            return function(nombre) {
-                                return `${saludo}, ${nombre}!`;
-                            };
-                        }
-                    </pre>
 
-                </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 8 Funcion de orden superior que retorna otra funcion
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+function crearSaludo(saludo) {
+    return function (nombre) {
+        return `${saludo}, ${nombre}!`;
+    };
+}
+
+const saludarHola = crearSaludo("Hola");
+const saludarAdios = crearSaludo("Adios");
+
+document.write(saludarHola("Sam"));
+document.write("br");
+document.write(saludarAdios("Sam"));
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h2>Prueba</h2>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     function crearSaludo(saludo) {
                         return function (nombre) {
@@ -553,24 +585,42 @@ document.write(operacionar(6,3,dividir));
             </div>
         </div>
     </div>
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio 9 Funciones con Argumentos predeterminados</h2>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                       function crearMultiplicador(factor) {
-                            return function(numero) {
-                                return numero * factor;
-                            };
-                        }
-                    </pre>
 
-                </div>
+
+    <br>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+function crearMultiplicador(factor) {
+    return function (numero) {
+        return numero * factor;
+    };
+}
+
+const duplicar2 = crearMultiplicador(2);
+const triplicar2 = crearMultiplicador(3);
+const multiplicarPorDefecto2 = crearMultiplicador();
+
+document.write("Duplicar 5: " + duplicar2(5));
+document.write("<br>");
+document.write("Triplicar 5: " + triplicar2(5));
+document.write("<br>");
+document.write("Multiplicar por defecto (2) 5: " + multiplicarPorDefecto2(5));
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h2>Prueba</h2>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     function crearMultiplicador(factor) {
                         return function (numero) {
@@ -592,43 +642,55 @@ document.write(operacionar(6,3,dividir));
         </div>
     </div>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Patron Revelador</h2>
-            <p>El patrón revelador es un patrón de diseño que utiliza closures para encapsular la lógica y exponer solo
-                ciertas partes de un objeto o módulo. Esto permite ocultar la implementación interna y proteger el
-                estado</p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                        const Contador = (function() {
-                            let contador = 0;
+    <br>
 
-                            function incrementar() {
-                                contador++;
-                            }
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
 
-                            function decrementar() {
-                                contador--;
-                            }
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Patron Revelador
+        </h2>
 
-                            function obtenerValor() {
-                                return contador;
-                            }
+        <div class="code-container" style="margin-top: 20px;">
 
-                            return {
-                                incrementar,
-                                decrementar,
-                                obtenerValor
-                            };
-                        })();
-                    </pre>
+            <div class="code-box">
+                <pre><code>
+const Contador = (function () {
+    let contador = 0;
 
-                </div>
+    function incrementar() {
+        contador++;
+    }
+
+    function decrementar() {
+        contador--;
+    }
+
+    function obtenerValor() {
+        return contador;
+    }
+
+    return {
+        incrementar,
+        decrementar,
+        obtenerValor
+    };
+})();
+document.write("Valor inicial: " + Contador.obtenerValor());
+document.write("<br>");
+Contador.incrementar();
+Contador.incrementar();
+document.write("Valor despues de incrementar 2 veces: " + Contador.obtenerValor());
+document.write("<br>");
+Contador.decrementar();
+document.write("Valor despues de decrementar 1 vez: " + Contador.obtenerValor());
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h2>Prueba</h2>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
                 <script>
                     const Contador = (function () {
                         let contador = 0;
@@ -663,44 +725,71 @@ document.write(operacionar(6,3,dividir));
             </div>
         </div>
     </div>
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Juego de Adivinar</h2>
-            <p>Seleccione un numero aletario del 1 al 100 </p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
-                    <h3>Funcion Tradicional</h3>
-                    <pre>
-                       function juegoAdivinar() {
-                        const numeroSecreto = Math.floor(Math.random() * 100) + 1;
-                        let intentos = 0;
 
-                        return function(adivinanza) {
-                            intentos++;
-                            if (adivinanza === numeroSecreto) {
-                                return `Felicidades! Adivinaste el numero ${numeroSecreto} en ${intentos} intentos.`;
-                            } else if (adivinanza < numeroSecreto) {
-                                return "Demasiado bajo! Intenta de nuevo.";
-                            } else {
-                                return "Demasiado alto! Intenta de nuevo.";
-                            }
-                        };
-                    }
 
-                    const adivinar = juegoAdivinar();
+    <br>
 
-                    document.getElementById("inputAdivinar").addEventListener("change", function() {
-                        const valor = parseInt(this.value);
-                        const resultado = adivinar(valor);
-                        alert(resultado);
-                        this.value = "";
-                    });
-                </pre>
 
-                </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Juego de Adivinar
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+function juegoAdivinar(min, max) {
+    const numeroSecreto = Math.floor(Math.random() * (max - min + 1)) + min;
+    let intentos = 0;
+
+    return function (adivinanza) {
+        intentos++;
+        if (adivinanza === numeroSecreto) {
+            return `Felicidades! Adivinaste el numero ${numeroSecreto} en ${intentos} intentos.`;
+        } else if (adivinanza < numeroSecreto) {
+            return "Demasiado bajo! Intenta de nuevo.";
+        } else {
+            return "Demasiado alto! Intenta de nuevo.";
+        }
+    };
+}
+
+let adivinar;
+
+document.getElementById("iniciarJuego").addEventListener("click", function () {
+    const min = parseInt(document.getElementById("minimo").value);
+    const max = parseInt(document.getElementById("maximo").value);
+    adivinar = juegoAdivinar(min, max);
+    alert(`Juego iniciado! Adivina un numero entre ${min} y ${max}.`);
+});
+
+document.getElementById("inputAdivinar").addEventListener("change", function () {
+    if (!adivinar) {
+        alert("Por favor, inicia el juego primero.");
+        this.value = "";
+        return;
+    }
+    const valor = parseInt(this.value);
+    const resultado = adivinar(valor);
+    alert(resultado);
+    this.value = "";
+});
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <h2>Prueba</h2>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    Seleccione un numero aletario del 1 al 100
+                </p>
                 <input type="text" id="inputAdivinar" placeholder="Ingresa un numero del 1 al 100" height="30px">
                 <p>Ingrese el rango que quiere jugar</p>
                 <input type="number" id="minimo" placeholder="Minimo" value="1">
@@ -748,39 +837,72 @@ document.write(operacionar(6,3,dividir));
         </div>
     </div>
 
+    <br>
 
-    <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Ejercicio Personal</h2>
-            <p>Ejercicio Personal utilizando fuciones de orden superior para </p>
-            <div class="w3-half w3-padding">
-                <div class="w3-code notranslate w3-black">
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
 
-                </div>
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Personal
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+function Descuento(porcentaje) {
+    return function (precio) {
+        var descuento = precio * porcentaje;
+        var precioFinal =precio - descuento;
+        document.write(`<del>El precio original es de ${precio}</del><br>`);
+        document.write(`El descuento aplicado es de ${porcentaje*100}%<br>`);
+        return `El total a pagar sera de ${precioFinal}! <br>`;
+    };
+}
+
+const des50 = Descuento(0.5);
+const des10 = Descuento(0.1);
+
+document.write(des50(200));
+document.write("<br>");
+document.write(des10(100));
+
+      </code></pre>
             </div>
-            <div class="w3-half w3-padding w3-border">
-                <script>
 
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    Ejercicio Personal utilizando fuciones de orden superior para
+
+                </p>
+                <script>
+                    function Descuento(porcentaje) {
+                        return function (precio) {
+                            var descuento = precio * porcentaje;
+                            var precioFinal =precio - descuento;
+                            document.write(`<del>El precio original es de ${precio}</del><br>`);
+                            document.write(`El descuento aplicado es de ${porcentaje*100}%<br>`);
+                            return `El total a pagar sera de ${precioFinal}! <br>`;
+                        };
+                    }
+
+                    const des50 = Descuento(0.5);
+                    const des10 = Descuento(0.1);
+
+                    document.write(des50(200));
+                    document.write("<br>");
+                    document.write(des10(100));
                 </script>
+
             </div>
         </div>
     </div>
 
+    <br>
 
-    <!-- Plantilla -->
-
-    <!-- <div class="w3-container w3-red">
-        <div class="w3-row">
-            <h2 class="w3-center">Titulo</h2>
-
-            <div class="w3-half w3-padding">
-
-            </div>
-            <div class="w3-half w3-padding w3-border">
-
-            </div>
-        </div>
-    </div> -->
 
 
 
