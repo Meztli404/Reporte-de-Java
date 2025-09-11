@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <title>Promesas</title>
+</head>
+
+<body>
+    <div class="w3-bar w3-blue  w3-large w3-center">
+        <a href="../index.html" class="w3-bar-item w3-button w3-hover-light-blue">Inicio</a>
+        <a href="dom.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Dom</a>
+        <a href="Funciones.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Funciones</a>
+        <a href="Arreglos.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Arreglos</a>
+        <a href="Promesas.html" class="w3-bar-item w3-button w3-hover-light-blue">Promesas</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 5</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 6</a>
+    </div>
+    <div class="hero">
+        <h1>Promesas y Asincronia</h1>
+    </div>
+    <br>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Ejemplos de Callback
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function sumar(a,b,callback)
+{
+const reesultado = a+b;
+callback(reesultado);
+}
+function mostrarResultado(resultado)
+{
+document.write("La suma es:", resultado);
+}
+sumar(5,10,mostrarResultado);
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p>Suma de 2 numeros</p>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    function sumar(a, b, callback) {
+                        const reesultado = a + b;
+                        callback(reesultado);
+                    }
+                    function mostrarResultado(resultado) {
+                        document.write("La suma es:", resultado);
+                    }
+                    sumar(5, 10, mostrarResultado);
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Ejemplo 2
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function obtenerDatos(callback){
+    setTimeout(()=>{
+        const datos={nombre:"Juan",edad:30};
+        callback(datos);
+    },2000);
+}
+function mostrarDatos(datos){
+    document.write(`Nombre: ${datos.nombre}, Edad: ${datos.edad}`);
+
+}
+obtenerDatos(mostrarDatos);
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    // function obtenerDatos(callback){
+                    //     setTimeout(()=>{
+                    //         const datos={nombre:"Juan",edad:30};
+                    //         callback(datos);
+                    //     },2000);
+                    // }
+                    // function mostrarDatos(datos){
+                    //     document.write(`Nombre: ${datos.nombre}, Edad: ${datos.edad}`);
+
+                    // }
+                    // obtenerDatos(mostrarDatos);
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Uso de Promesas Ejemplo 1
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+const miPromesa = new Promise((resolve,reject)=>{
+    const exito=true;
+    if(exito){
+        resolve("Operacione Exitosa!");
+    }else{
+        reject("Ocurrio un error.");
+    }                        
+});
+//Usar la promesa
+miPromesa
+    .then((resultado)=>{
+        document.write(resultado);
+    })
+    .catch((error)=>{
+        console.error(error);
+    });
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    const miPromesa = new Promise((resolve, reject) => {
+                        const exito = true;
+                        if (exito) {
+                            resolve("Operacione Exitosa!");
+                        } else {
+                            reject("Ocurrio un error.");
+                        }
+                    });
+                    //Usar la promesa
+                    miPromesa
+                        .then((resultado) => {
+                            document.write(resultado);
+                        })
+                        .catch((error) => {
+                            console.error(error);
+                        });
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Uso de Promesas Ejemplo 2
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+const obtenerPosts = () =>{
+    fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response=>response.json())
+    .then(data => mostrarPosts(data))
+    .catch(error => console.log('Error: ',error));
+};
+const mostrarPosts = (posts) => {
+    const postUl =document.getElementById('posts');
+    posts.forEach(post => {
+        const li = document.createElement('li');
+        li.textContent = post.title;
+        postUl.appendChild(li);
+    });
+};
+obtenerPosts();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p>Posts</p>
+                <ul id="posts">
+
+                </ul>
+                <script>
+                    const obtenerPosts = () => {
+                        fetch('https://jsonplaceholder.typicode.com/posts')
+                            .then(response => response.json())
+                            .then(data => mostrarPosts(data))
+                            .catch(error => console.log('Error: ', error));
+                    };
+                    const mostrarPosts = (posts) => {
+                        const postUl = document.getElementById('posts');
+                        posts.forEach(post => {
+                            const li = document.createElement('li');
+                            li.textContent = post.title;
+                            postUl.appendChild(li);
+                        });
+                    };
+                    obtenerPosts();
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Uso de Async/Await
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+async function llamarApiConAsyncAwait() {
+    try{
+        let datos =await llamadaApi();
+        console.log(datos);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+llamarApiConAsyncAwait();
+
+async function obtenerPostsConAsyncAwait1() {
+    try{
+        let response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        if(!response.ok){
+            throw new Error('Error en la llamada a la API');
+        }
+        let posts = await response.json();
+        console.log('Posts obtenidos: ', posts);
+    } catch(error){
+        console.log('Error: ', error);
+    }
+}
+obtenerPostsConAsyncAwait1();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <ul id="posts1">
+
+                </ul>
+                <script>
+                    // async function llamarApiConAsyncAwait() {
+                    //     try{
+                    //         let datos =await llamadaApi();
+                    //         console.log(datos);
+                    //     }
+                    //     catch(error){
+                    //         console.log(error);
+                    //     }
+                    // }
+                    // llamarApiConAsyncAwait();
+
+                    async function obtenerPostsConAsyncAwait1() {
+                        try {
+                            let response = await fetch('https://jsonplaceholder.typicode.com/posts');
+                            if (!response.ok) {
+                                throw new Error('Error en la llamada a la API');
+                            }
+                            let posts = await response.json();
+                            console.log('Posts obtenidos: ', posts);
+                        } catch (error) {
+                            console.log('Error: ', error);
+                        }
+                    }
+                    obtenerPostsConAsyncAwait1();
+
+                    function mostrarPosts1(pots) {
+                        const postUl1 = document.getElementById('posts1');
+                        posts.forEach(post => {
+                            const li = document.createElement('li');
+                            li.textContent = post.title;
+                            postUl1.appendChild(li);
+                        })
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Mostrar Usuarios en una Pagina Web
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript en un archivo aparte app.js
+<br>
+const obtenerUsuarios=()=>{
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response=>response.json())
+        .then(data=>mostrarUsuarios(data))
+        .catch(error=>console.log('Error:',error));
+};
+
+const mostrarUsuarios = (users)=>{
+    const userUl = document.getElementById('users');
+    usersUl.innerHTML='';
+    users.forEach(user=>{
+        const li = document.createElement('li');
+        li.textContent = user.name;
+        usersUl.appendChild(li);
+    });
+};
+obtenerUsuarios();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <ul id="users">
+
+                </ul>
+                <script src="app.js">
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio con Numeros de Personas
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+async function obtenerUsuarios2() {
+      try {
+        let response = await fetch("https://jsonplaceholder.typicode.com/users");
+        let data = await response.json();
+
+        // Seleccionamos el UL con id "emails1"
+        let lista = document.getElementById("emails1");
+
+        // Iteramos sobre los usuarios y creamos elementos li
+        data.forEach(user => {
+          let li = document.createElement("li");
+          li.textContent = `ID: ${user.id} | Email: ${user.email}`;
+          lista.appendChild(li);
+        });
+
+      } catch (error) {
+        console.error("Error al obtener usuarios:", error);
+      }
+    }
+
+    // Ejecutamos la función
+    obtenerUsuarios2();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <ul id="emails1">
+
+                </ul>
+                <script>
+                    // Función asincrónica para obtener usuarios
+    async function obtenerUsuarios2() {
+      try {
+        let response = await fetch("https://jsonplaceholder.typicode.com/users");
+        let data = await response.json();
+
+        // Seleccionamos el UL con id "emails1"
+        let lista = document.getElementById("emails1");
+
+        // Iteramos sobre los usuarios y creamos elementos <li>
+        data.forEach(user => {
+          let li = document.createElement("li");
+          li.textContent = `ID: ${user.id} | Email: ${user.email}`;
+          lista.appendChild(li);
+        });
+
+      } catch (error) {
+        console.error("Error al obtener usuarios:", error);
+      }
+    }
+
+    // Ejecutamos la función
+    obtenerUsuarios2();
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+
+
+    <!-- <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function saludo() {
+  alert("¡Hola, Programación Móvil!");
+}
+saludo();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    <span class="w3-tag w3-blue">¡Hola, Programación Móvil!</span>
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>

@@ -13,7 +13,7 @@
         <a href="dom.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Dom</a>
         <a href="Funciones.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Funciones</a>
         <a href="Arreglos.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Arreglos</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 4</a>
+        <a href="Promesas.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Promesas</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 5</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 6</a>
     </div>
@@ -346,7 +346,21 @@ document.write(filtrarUsuarios(usuarios1));
             <div class="code-box">
                 <pre><code>
 // Ejemplo en JavaScript
-
+ const productoszap = [{nombre:"camiseta",categoria:"ropa"},
+{nombre:"pantalon",categoria:"ropa"}, {nombre:"zapatos",categoria:"calzado"},
+{nombre:"sandalias",categoria: "calzado"}];
+function agruparPorCategoria(arr){
+    return arr.reduce((grupo, producto)=>{
+        const categoria =producto.categoria;
+        if(!grupo[categoria]){
+            grupo[categoria]=[];
+        }
+        grupo[categoria].push(producto);
+        return grupo;
+    },{});
+}
+agruparPorCategoria(productoszap);
+document.write(JSON.stringify(agruparPorCategoria(productoszap)));
       </code></pre>
             </div>
 
@@ -389,7 +403,18 @@ document.write(filtrarUsuarios(usuarios1));
             <div class="code-box">
                 <pre><code>
 // Ejemplo en JavaScript
-
+const pila = [5,3,8,1,4];
+function ordenarPila(arr){
+    return arr.sort((a,b)=>a-b);
+}
+document.querySelector("button").addEventListener("click",()=>{
+    document.write("Pila ordenada: " + ordenarPila(pila));
+});
+document.write("Pila original: " + pila + "<br>");
+// Pila Ordenada
+pila.forEach(i => {
+    document.write(pila(i));
+});
       </code></pre>
             </div>
 

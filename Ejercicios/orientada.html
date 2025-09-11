@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <title>Orientado a Objetos</title>
+</head>
+<body>
+    <div class="w3-bar w3-blue  w3-large w3-center">
+        <a href="../index.html" class="w3-bar-item w3-button w3-hover-light-blue">Inicio</a>
+        <a href="dom.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Dom</a>
+        <a href="Funciones.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Funciones</a>
+        <a href="Arreglos.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Arreglos</a>
+        <a href="Promesas.html" class="w3-bar-item w3-button w3-hover-light-blue">Promesas</a>
+        <a href="modulos.html" class="w3-bar-item w3-button w3-hover-light-blue">Modulos</a>
+        <a href="orientada.html" class="w3-bar-item w3-button w3-hover-light-blue"> Orientada a Objetos</a>
+    </div>
+    <div class="hero">
+        <h1>Programacion Orientada a Objetos</h1>
+    </div>
+    <br>
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejemplo
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function saludo() {
+  alert("¡Hola, Programación Móvil!");
+}
+saludo();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    //Definicion de Clase
+                    class Animal{
+                        constructor(nombre,sonido){
+                            this.nombre = nombre;
+                            this.sonido = sonido;
+                        }
+                        hacerSonido(){
+                            return(`${this.nombre} hace ${this.sonido}`);
+                        }
+                    }
+
+                    const perro =new Animal('perro','guau');
+                    document.writeln("Salida:"+perro.hacerSonido());
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Herencia
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    class Animal{
+                        constructor(nombre,sonido){
+                            this.nombre=nombre;
+                            this.sonido=sonido;
+                        }
+                        hacerSonido(){
+                            return(`${this.nombre} hace ${this.sonido}`);
+                        }
+                    }
+                    class Perro extends Animal{
+                        constructor(nombre,raza){
+                            super(nombre,'guau');
+                            this.raza=raza;
+                        }
+                        mostrarRaza(){
+                            return(`${this.nombre} es un ${this.raza}`);
+                        }
+                    }
+                    const miPerro = new Perro('Max','Labrador');
+                    document.write("<br>"+miPerro.hacerSonido());
+                    document.write("<br>"+miPerro.mostrarRaza());
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Polimorfismo
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <script>
+                    class Animal{
+                        constructor(nombre,sonido){
+                            this.nombre=nombre;
+                            this.sonido=sonido;
+                        }
+                        hacerSonido(){
+                            return(`${this.nombre} hace ${this.sonido}`);
+                        }
+                    }
+                    class Perro extends Animal{
+                        constructos(nombre,raza){
+                            super(nombre,'guau');
+                            this.raza=raza;
+                        }
+                        hacerSonido()
+                        {
+                            return(`${this.nombre}ladra: ${this.sonido}`);
+                        }
+                    }
+
+                    class Gato extends Animal{
+                        constructor(nombre){
+                            super(nombre, 'miau');
+                        }
+                        hacerSonido(){
+                            return (`${this.nombre} maulla: ${this.sonido}`);
+                        }
+                    }
+
+                    const animales = [new Perro('max','labrador'),new Gato('Luna')];
+                    let salida='';
+                    animales.forEach(animales =>{
+                        salida+=animal.hacerSonido()+'<br>';
+                    });
+
+                    document.write(salida); 
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio Vehiculo
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                
+            </div>
+        </div>
+    </div>
+
+     <!-- Plantilla -->
+    <!-- <div class="w3-container w3-padding-32"
+        style="background: linear-gradient(45deg, #004e92, #000428); border-radius: 12px;">
+
+        <h2 class="w3-center"
+            style="color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); background-color: rgba(0, 0, 0, 0.1)!important;">
+            Ejercicio 
+        </h2>
+
+        <div class="code-container" style="margin-top: 20px;">
+            
+            <div class="code-box">
+                <pre><code>
+// Ejemplo en JavaScript
+function saludo() {
+  alert("¡Hola, Programación Móvil!");
+}
+saludo();
+      </code></pre>
+            </div>
+
+            <div class="result-box">
+                <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
+                <p><b>Al ejecutar el código:</b></p>
+                <p>Se muestra una alerta con el mensaje:<br>
+                    <span class="w3-tag w3-blue">¡Hola, Programación Móvil!</span>
+                </p>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>
