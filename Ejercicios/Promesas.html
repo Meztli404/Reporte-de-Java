@@ -16,8 +16,8 @@
         <a href="Funciones.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Funciones</a>
         <a href="Arreglos.html" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio Arreglos</a>
         <a href="Promesas.html" class="w3-bar-item w3-button w3-hover-light-blue">Promesas</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 5</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-light-blue">Ejercicio 6</a>
+        <a href="modulos.html" class="w3-bar-item w3-button w3-hover-light-blue">Modulos</a>
+        <a href="orientada.html" class="w3-bar-item w3-button w3-hover-light-blue"> Orientada a Objetos</a>
     </div>
     <div class="hero">
         <h1>Promesas y Asincronia</h1>
@@ -290,17 +290,6 @@ obtenerPostsConAsyncAwait1();
 
                 </ul>
                 <script>
-                    // async function llamarApiConAsyncAwait() {
-                    //     try{
-                    //         let datos =await llamadaApi();
-                    //         console.log(datos);
-                    //     }
-                    //     catch(error){
-                    //         console.log(error);
-                    //     }
-                    // }
-                    // llamarApiConAsyncAwait();
-
                     async function obtenerPostsConAsyncAwait1() {
                         try {
                             let response = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -309,12 +298,13 @@ obtenerPostsConAsyncAwait1();
                             }
                             let posts = await response.json();
                             console.log('Posts obtenidos: ', posts);
+
                         } catch (error) {
                             console.log('Error: ', error);
                         }
                     }
                     obtenerPostsConAsyncAwait1();
-
+                    
                     function mostrarPosts1(pots) {
                         const postUl1 = document.getElementById('posts1');
                         posts.forEach(post => {
@@ -323,6 +313,7 @@ obtenerPostsConAsyncAwait1();
                             postUl1.appendChild(li);
                         })
                     }
+        
                 </script>
             </div>
         </div>
