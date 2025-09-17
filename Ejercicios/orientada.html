@@ -197,14 +197,101 @@ saludo();
             <div class="code-box">
                 <pre><code>
 // Ejemplo en JavaScript
+class Vehiculo{
+    constructor(marca,modelo){
+        this.marca=marca;
+        this.modelo=modelo;
+    }
+    mostrarInfo(){
+        return(`Marca: ${this.marca} Modelo: ${this.modelo}`);
+    }
+}
 
+class Coche extends Vehiculo{
+    constructor(marca,modelo,puertas){
+        super(marca,'Deportivo');
+        this.modelo=modelo;
+        this.puerta=puertas;
+    }
+    mostrarModelo(){
+        return(`${this.marca} es un ${this.modelo}`);
+    }
+        mostrarPuerta(){
+        return(`Puertas: ${this.puerta}`);
+    }
+}
+
+class Moto extends Vehiculo{
+    constructor(marca,modelo){
+        super(marca,'Deportivo');
+        this.modelo=modelo;
+    }
+    mostrarModelo(){
+        return(`${this.marca} es un ${this.modelo}`);
+    }
+    encederMoto(){
+        return(`La moto ${this.modelo} se ha encendido`);
+    }
+}
+const miCoche = new Coche('Honda','Civic');
+document.write("br"+miCoche.mostrarInfo());
+document.write("br"+miCoche.mostrarPuerta());
+const miMoto = new Moto('Honda','CBR');
+document.write("br"+miMoto.mostrarInfo());
+document.write("br"+miMoto.mostrarModelo());
+document.write("br"+miMoto.encederMoto());
       </code></pre>
             </div>
 
             <div class="result-box">
                 <h3 style="color:#004e92; font-weight:bold;">Resultado</h3>
                 <p><b>Al ejecutar el código:</b></p>
-                
+                <script>
+                    class Vehiculo{
+                        constructor(marca,modelo){
+                            this.marca=marca;
+                            this.modelo=modelo;
+                        }
+                        mostrarInfo(){
+                            return(`Marca: ${this.marca} Modelo: ${this.modelo}`);
+                        }
+                    }
+
+                    class Coche extends Vehiculo{
+                        constructor(marca,modelo,puertas){
+                            super(marca,'Deportivo');
+                            this.modelo=modelo;
+                            this.puerta=puertas;
+                        }
+                        mostrarModelo(){
+                            return(`${this.marca} es un ${this.modelo}`);
+                        }
+                         mostrarPuerta(){
+                            return(`Puertas: ${this.puerta}`);
+                        }
+                    }
+
+                    class Moto extends Vehiculo{
+                        constructor(marca,modelo){
+                            super(marca,'Deportivo');
+                            this.modelo=modelo;
+                        }
+                        mostrarModelo(){
+                            return(`${this.marca} es un ${this.modelo}`);
+                        }
+                        encederMoto(){
+                            return(`La moto ${this.modelo} se ha encendido`);
+                        }
+                    }
+                    const miCoche = new Coche('Honda','Civic');
+                    document.write("<br>"+miCoche.mostrarInfo());
+                    document.write("<br>"+miCoche.mostrarPuerta());
+                    const miMoto = new Moto('Honda','CBR');
+                    document.write("<br>"+miMoto.mostrarInfo());
+                    document.write("<br>"+miMoto.mostrarModelo());
+                    document.write("<br>"+miMoto.encederMoto());
+
+                </script>
             </div>
         </div>
     </div>
